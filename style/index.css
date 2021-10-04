@@ -27,31 +27,42 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 
     header{
         background-color: gray;
-        padding-top: 20px;
+        padding-top: 1%;
     }
     nav{
-        height: 30px;
-        padding: 20px;
+        padding: 1%;
+
+       
     }
     nav a{
         text-decoration: none;
         color: white;
+        margin: 1%;
     }
     h1{
-        padding-bottom: 2px;
         text-transform: uppercase;
         font-weight: bold;
-        padding-left: 20px;
+        padding-left: 2%;
     } 
     /* This is the middle of the page  */
 
     .topsection{
         display: flex;
+        align-items: center;
         width: 100%;
-        padding: 1% 1%;
         border: 2px solid black;
-        background-color: rgb(148, 129, 129)
+        background-color: rgb(148, 129, 129) 
         
+    }
+    .pic{
+        background-image: url('https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    .topsection div{
+        width: 50%;
     }
     a{
         color: white;
@@ -61,20 +72,23 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
     }
     .MainPic img{
         width: 50%;   
-        padding-top: 25px; 
+        padding-top: 25%; 
     }
     .Projects{
-        width:50%;
-        padding-top: 200px;
-        padding-left: 50px;
-
+        padding-left: 15%;
     } 
     .MiddleParagraph{
         padding-top: 2%;
+        width: 50%;
+        font-size: 1.3rem;
     }
     h2{
         text-transform: uppercase;
         padding-bottom: 2%;
+        font-size: x-large;
+    }
+    .Projects a{
+        font-size: larger;
     }
     .MainPic{
         width: 50%;
@@ -115,10 +129,50 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
     }
     h3{
         text-align: center;
-        padding: 20px;
+        padding: 2%;
     }
     #contact{
         text-align: center;
+    }
+
+    /*Media Queries*/ 
+    @media (max-width:500px){
+    /* This is the head */
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    nav a{
+        display: flex;
+        flex-direction: column;
+    }
+    .topsection{
+        flex-direction: column;
+    }
+    .topsection div{
+        width: 100%;
+    }
+    h2{
+        text-align: center;
+    }
+    .Projects{
+        padding: 0;
+        margin: 3%;
+        text-align: center;
+    }
+
+    #middle div{
+        width: 40%;
+        margin: 2%;
+    }
+    .MiddleParagraph{
+        width: 90%;
+        padding: 4%;
+        text-align: left;
+    }
+
+   
     }
     
     
